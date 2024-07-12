@@ -61,7 +61,7 @@ const Forecast = ({ data }) => {
 
   return (
     <div className="mt-28 md:w-full">
-      <label className="block font-bold mb-2 text-2xl md:text-4xl text-gray-800 bg-indigo-500 w-fit p-2 rounded-r-full bg-gradient-to-r from-slate-700 via-blue-400 to-orange-500 bg-clip-text text-transparent mx-auto border-t-2 border-orange-600">
+      <label className="block font-bold mb-2 text-2xl md:text-4xl text-gray-800 bg-indigo-500 w-fit p-2 rounded-r-full bg-gradient-to-r from-slate-700 via-blue-400 to-orange-500 bg-clip-text text-transparent mx-auto border-t-2 border-orange-500">
         Weekly Forecast
       </label>
       <Accordion allowZeroExpanded className="grid md:grid-cols-4 gap-3 w-full">
