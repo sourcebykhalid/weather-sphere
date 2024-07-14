@@ -7,15 +7,12 @@ import {
   TiWeatherStormy,
 } from "react-icons/ti";
 import "react-accessible-accordion/dist/fancy-example.css";
-import { motion } from "framer-motion";
+
 import {
   FaArrowsUpDown,
   FaCloudRain,
-  FaClover,
-  FaHeart,
   FaLocationDot,
   FaTemperatureHalf,
-  FaWater,
   FaWind,
 } from "react-icons/fa6";
 import { CiStar } from "react-icons/ci";
@@ -118,10 +115,10 @@ const CurrentWeather = ({ data }) => {
     },
   ];
   return (
-    <div className=" flex flex-col md:w-1/2 mt-16">
+    <div className=" flex flex-col md:w-full mt-16">
       <div
         className={`flex flex-col items-center md:items-start  p-4 rounded-md shadow-black shadow-md w-full gap-y-6  ${
-          isFavorite(data.city) ? "bg-yellow-100" : " bg-teal-100"
+          isFavorite(data.city) ? "bg-yellow-100" : " bg-neutral-400"
         }`}
       >
         <div className="text-2xl font-semibold flex justify-between items-center w-full space-x-2">
@@ -150,23 +147,20 @@ const CurrentWeather = ({ data }) => {
             {getWeatherIcon(data.weather[0].description)}
           </p>
         </div>
-        <p className=" text-7xl font-serif font-bold text-slate-800">
+        <p className=" text-7xl font-serif font-bold text-neutral-800">
           {" "}
           {convertKelvinToCelsius(data.main.temp)}°C
         </p>
         <div className="grid grid-cols-3 md:grid-cols-5 gap-2 ">
           {weatherDetails.map((detail, index) => (
-            <motion.div
+            <div
               key={index}
               className="flex flex-col w-24 h-24 p-2 justify-around items-center bg-black rounded-md shadow-md shadow-orange-700 text-slate-100"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: index * 0.1 }}
             >
               <p className="font-semibold">{detail.label}</p>
               <p className="text-slate-400">{detail.value}</p>
               {detail.icon}
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>
