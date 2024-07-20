@@ -33,7 +33,7 @@ function Reveal({ children, width = "100%" }) {
         initial="hidden"
         animate={slideControls}
         transition={{ duration: 0.5, ease: "easeInOut" }}
-        className=" absolute top-4 bottom-4 left-0 right-0 z-20 bg-neutral-600"
+        className=" absolute top-4 bottom-4 left-0 right-0 z-20 bg-emerald-200"
       ></motion.div>
     </div>
   );

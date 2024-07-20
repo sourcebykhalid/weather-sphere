@@ -4,7 +4,6 @@ import CurrentWeather from "./Components/CurrentWeather";
 import Forecast from "./Components/Forecast";
 import { WEATHER_API_KEY, WEATHER_API_URL } from "./Api";
 import { TiWeatherSunny } from "react-icons/ti";
-import { motion } from "framer-motion";
 import Reveal from "./Components/Reveal";
 function App() {
   const [currentWeather, setCurrentWeather] = useState(null);
@@ -62,12 +61,12 @@ function App() {
         <div className="flex flex-col md:flex-row mx-2 gap-x-2 mt-10">
           {error && <p className="text-red-500">{error}</p>}
 
-          <p className="w-2/3 m-auto text-center font-bold mt-16 md:m-auto text-transparent bg-clip-text bg-gradient-to-r from-neutral-900 via-neutral-400 to-neutral-700">
+          <p className="w-2/3 m-auto text-center font-bold mt-16 md:m-auto text-transparent bg-clip-text bg-gradient-to-r from-neutral-700 via-green-800 to-lime-900">
             Welcome to{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-yellow-500 font-mono text-xl">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-600 to-yellow-500 font-mono text-xl">
               Weather
             </span>
-            <span className="bg-gradient-to-r from-slate-700 via-blue-400 to-orange-500 bg-clip-text text-transparent font-bold font-serif text-2xl border-b-2 border-orange-400">
+            <span className="bg-gradient-to-r from-slate-700 via-blue-400 to-orange-600 bg-clip-text text-transparent font-bold font-serif text-2xl border-b-2 border-orange-600 ">
               Sphere
             </span>
             <br /> Your go-to app for real-time weather updates, forecasts, and
@@ -85,7 +84,7 @@ function App() {
           {currentWeather && <CurrentWeather data={currentWeather} />}
         </div>
       </Reveal>
-      <hr className="mt-4 bg-yellow-200 rounded-full h-1 w-2/3 mx-auto" />
+      <hr className="mt-4 bg-orange-500 rounded-full h-1 w-2/3 mx-auto" />
       <Reveal>
         <div className=" mt-10">
           {error && <p className="text-red-500">{error}</p>}
