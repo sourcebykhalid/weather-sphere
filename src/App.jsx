@@ -46,12 +46,12 @@ function App() {
   };
 
   return (
-    <div className=" bg-gradient-to-b from-neutral-300 via-neutral-400 to-neutral-700">
+    <div className="  bg-neutral-950">
       <header className="flex flex-col sm:flex-row sm:justify-between items-center backdrop-blur-md h-fit md:py-5 mb-24 fixed top-0 w-full sm:px-4 z-40">
-        <div className="text-xl font-semibold text-orange-600 font-mono md:bg-black md:rounded-b-md md:shadow-emerald-400 md:shadow-lg scale-90 scale-y-90">
+        <div className="text-xl font-semibold text-orange-600 font-mono md:bg-black md:rounded-b-md md:shadow-emerald-400 md:shadow-lg scale-90 scale-y-90 px-2">
           <TiWeatherSunny className="text-3xl font-bold  text-emerald-400 mx-auto  hover:animate-spin" />
           <span>Weather</span>
-          <span className="font-bold font-serif bg-gradient-to-r from-slate-700 via-blue-400 to-orange-500 bg-clip-text text-transparent">
+          <span className="font-bold font-serif bg-gradient-to-r from-slate-700 via-blue-400 to-orange-500 bg-clip-text text-transparent border-b-2 border-orange-600">
             Sphere
           </span>
         </div>

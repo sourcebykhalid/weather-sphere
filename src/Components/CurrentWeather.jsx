@@ -118,7 +118,7 @@ const CurrentWeather = ({ data }) => {
     <div className=" flex flex-col md:w-full mt-16">
       <div
         className={`flex flex-col items-center md:items-start  p-4 rounded-md shadow-black shadow-md w-full gap-y-6  ${
-          isFavorite(data.city) ? "bg-yellow-100" : " bg-neutral-400"
+          isFavorite(data.city) ? "bg-yellow-100" : " bg-neutral-100"
         }`}
       >
         <div className="text-2xl font-semibold flex justify-between items-center w-full space-x-2">

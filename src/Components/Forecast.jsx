@@ -73,10 +73,10 @@ const Forecast = ({ data }) => {
           {data.list.slice(0, 7).map((item, idx) => (
             <AccordionItem key={idx}>
               <AccordionItemHeading>
-                <AccordionItemButton className="rounded-md cursor-pointer hover:scale-105">
+                <AccordionItemButton className="rounded-md cursor-pointer hover:border-b-orange-500 sm:hover:border-b-4">
                   <Reveal>
                     <motion.div
-                      className="flex flex-col mx-4 rounded-b-md items-center justify-between bg-orange-100 hover:bg-orange-200 py-8  shadow-emerald-800 shadow-inner border-b border-gray-300 mb-4  cursor-pointer"
+                      className="flex flex-col mx-4 rounded-b-md items-center justify-between bg-neutral-100 hover:bg-orange-200 py-8  shadow-emerald-800 shadow-inner border-b border-gray-300 mb-4  cursor-pointer hover:transition-all"
                       initial={{ opacity: 0, y: 20 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ delay: idx * 0.1 }}
